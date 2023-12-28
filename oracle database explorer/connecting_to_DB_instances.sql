@@ -16,3 +16,21 @@ sql>connect hr/hr @host1.eg.com:1521/db.eg.com
 
 ------------------------------------------------------------DEMO------------------------------------------------
 -- local connection (DBA)
+[oracle @ edvmrlpo~] $id
+$ echo $ORACLE_SID
+
+$ echo $ORACLE_HOME
+
+$sqlplus/ as sysdba
+sql> show user
+--  output user is 'sys'
+
+sql> show pdbs
+...
+...
+...
+sql>exit
+
+
+-- Easy connection(Regular database users)
+
