@@ -58,6 +58,11 @@ ORCL CDB=
 (SERVER=..)
 (SERVICE_NAME= ORCLCDB)
 
-
+--code next
+hr@ORCLPDB1
+enter password:******
+sql> show con_name
+sql> show_user
+--output: 'hr'
 
 
