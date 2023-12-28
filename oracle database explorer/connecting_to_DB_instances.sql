@@ -65,4 +65,14 @@ sql> show con_name
 sql> show_user
 --output: 'hr'
 
+hr@ORCLPDB2
+enter password:******
+sql> show con_name
+sql> show_user
+--output: 'hr'
+...
+....
+....
+
+
 
