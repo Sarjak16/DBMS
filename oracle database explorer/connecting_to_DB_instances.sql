@@ -23,7 +23,7 @@ $ echo $ORACLE_HOME
 
 $sqlplus/ as sysdba
 sql> show user
---  output user is 'sys'
+--  output: user is 'sys'
 
 sql> show pdbs
 ...
@@ -33,4 +33,31 @@ sql>exit
 
 
 -- Easy connection(Regular database users)
+
+$ sqlplus hr @ edvmrlpo: 1521/ orclpd15
+Enter password:******
+--youre in now
+sql> show user
+--output: 'hr'
+
+sql> show con_name 
+
+sq> select * from employees;
+
+--LOCAL NAMING
+$ cd $ ORACLE_HOME/ network/ admin 
+$ISL
+$more tnsnames.ora
+
+--output:
+ORCL CDB=
+(descreption= ......)
+(address= (protocol =TCP)(hoat= cdmrlpo --host)
+(port= 1521--listener port))
+(CONNECT_DATa= ...)
+(SERVER=..)
+(SERVICE_NAME= ORCLCDB)
+
+
+
 
