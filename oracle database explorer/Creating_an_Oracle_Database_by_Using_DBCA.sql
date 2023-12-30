@@ -13,3 +13,10 @@ $ORACLE_HOME/bin/dbca -silent -createDatabase
 -responseFile NO_VALUE -characterSet AL32UTF8
 
 -totalMemory 1800 -sysPassword Welcome_1
+
+
+-systemPassword Welcome_1-pdbAdminPassword Welcome_1 emConfiguration DBEXPRESS -dbsnmpPassword Welcome_1
+
+- -emExpressPort 5500 -enableArchive true
+
+-recoveryAreaDestination /u03/app/oracle/fast_recovery_area -recoveryAreaSize 15000 -datafileDestination /u02/app/oracle/oradata
