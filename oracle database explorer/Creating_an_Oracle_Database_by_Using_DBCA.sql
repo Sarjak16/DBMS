@@ -20,3 +20,7 @@ $ORACLE_HOME/bin/dbca -silent -createDatabase
 - -emExpressPort 5500 -enableArchive true
 
 -recoveryAreaDestination /u03/app/oracle/fast_recovery_area -recoveryAreaSize 15000 -datafileDestination /u02/app/oracle/oradata
+
+Delete a database named ORCL:
+
+$ORACLE_HOME/bin/dbca -silent-deleteDatabase -sourceDB ORCL -sid ORCL -sysPassword Welcome_1
