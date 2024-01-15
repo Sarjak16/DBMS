@@ -58,4 +58,24 @@ Connected to:
 
 Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 Version 19.3.0.0.0 Production
 
-SQL>
+SQL> show pdbs
+
+CON ID CON NAME
+
+OPEN MODE RESTRICTED
+
+2 PDB$SEED
+
+READ ONLY NO
+
+3 PDB1
+
+READ WRITE NO
+
+SQL> exit
+
+Disconnected from Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 Production
+
+Version 19.3.0.0.0
+
+[oracle@edvmr1p0 ~]$ clear
