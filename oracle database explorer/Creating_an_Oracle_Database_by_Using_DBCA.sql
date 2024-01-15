@@ -24,3 +24,38 @@ $ORACLE_HOME/bin/dbca -silent -createDatabase
 Delete a database named ORCL:
 
 $ORACLE_HOME/bin/dbca -silent-deleteDatabase -sourceDB ORCL -sid ORCL -sysPassword Welcome_1
+
+
+
+
+------------DEMO:
+
+
+[oracle@edvmrlp0 ~]$ . oraenv
+
+ORACLE SID = [orclcdb] ?
+
+
+The Oracle base remains unchanged with value /u01/app/oracle
+
+[oracle@edvmr1p0 ~]$ dbca
+
+[oracle@edvmr1p0 ~]$ . oraenv
+
+ORACLE SID = [orclcdb] ? CDB1
+
+The Oracle base remains unchanged with value /u01/app/oracle
+
+[oracle@edvmr1p0 ~]$ sqlplus / as sysdba
+
+SQL*Plus: Release 19.0.0.0.0 Production on Tue Aug 4 00:01:34 2020
+
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle. All rights reserved.
+
+Connected to:
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 Version 19.3.0.0.0 Production
+
+SQL>
