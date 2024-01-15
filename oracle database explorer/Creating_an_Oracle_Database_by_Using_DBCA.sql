@@ -146,6 +146,44 @@ System Identifier(SID).CDR2
 
 Look at the Log File "/u01/app/oracle/cfgtoollogs/obca/CD82/cb6z.log for further details".
 
+[oracle@edvmr1p0 ~]$ . oraenv
+
+ORACLE SID = [CDB1] ? CDB2
+
+The Oracle base remains unchanged with value /u01/app/oracle [oracle@edvmr1p0 ~]$ sqlplus / as sysdba
+
+SQL*Plus: Release 19.0.0.0.0 Version 19.3.0.0.0 Production on Tue Aug 4 00:35:42 2020
+
+Copyright (c) 1982, 2019, Oracle. All rights reserved.
+
+Connected to:
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 Production Version 19.3.0.0.0
+
+SQL> show pdbs
+
+CON ID CON NAME
+
+OPEN MODE
+
+RESTRICTED
+
+2 PDB$SEED
+
+READ ONLY NO
+
+3 PDB1
+
+READ WRITE NO
+
+SQL> exit
+
+Disconnected from Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+
+Version 19.3.0.0.0
+
+[oracle@edvmr1p0 ~]$
+
 
 
 
