@@ -59,18 +59,7 @@ Connected to:
 Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 Version 19.3.0.0.0 Production
 
 SQL> show pdbs
-
-CON ID CON NAME
-
-OPEN MODE RESTRICTED
-
-2 PDB$SEED
-
-READ ONLY NO
-
-3 PDB1
-
-READ WRITE NO
+--output:........
 
 SQL> exit
 
@@ -79,3 +68,28 @@ Disconnected from Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 Prod
 Version 19.3.0.0.0
 
 [oracle@edvmr1p0 ~]$ clear
+
+
+
+
+-------------------------------------DEMO2: DBCA in silent mode
+--shut down CDB! first:
+[oracle@edvmr1p0 ~]$ oraenv
+
+ORACLE SID = [CDB1] ?
+
+The Oracle base remains unchanged with value /u01/app/oracle [oracle@edvmr1p0 ~]$ sqlplus / as sysdba
+
+SQL*Plus: Release 19.0.0.0.0 Version 19.3.0.0.0 Production on Tue Aug 4 00:15:32 2020
+
+Copyright (c) 1982, 2019, Oracle. All rights reserved.
+
+Connected to:
+
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 Production Version 19.3.0.0.0
+
+SQL> shutdown immediate Database closed. Database dismounted. ORACLE instance shut down. 
+SQL> exit
+
+
+
