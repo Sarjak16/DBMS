@@ -88,8 +88,67 @@ Connected to:
 
 Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 Production Version 19.3.0.0.0
 
-SQL> shutdown immediate Database closed. Database dismounted. ORACLE instance shut down. 
+SQL> shutdown immediate 
+Database closed.
+ Database dismounted.
+ORACLE instance shut down. 
 SQL> exit
+
+Version 19.3.0.0.0
+
+oraclededear100 -15 cat crab.sh
+
+SORACIEHOME/bin/daca silent createDatabase templatesane General Purpose dbc-gdbrane CO2 sid C002 createAsContainerDatabase True nunberorrons 2 poblame pdb secaratundofarPods true respunserite NO VA total memory 1800 sysPassword Loud 40 systemPassword Loud 40 pdbAdminPassword Loud 40 enconfiguration DREXPRESS dbshepPassword Loud 40 exfxpressport 5302 enableArchive false feverarebestinats on /001/app/oracle/fast recovery area recoveryAreašize 15000 datafileDestination /u01/app/oracle/oradata
+
+[oracle@edvarip0-15/crdb.sh Prepare for do operation
+
+complete
+
+Copying database files
+
+31% complete
+
+Creating and starting Oracle instance
+
+32% complete
+
+365 complete
+
+40% complete
+
+43% complete
+
+46% complete
+
+Completing Database Creation
+
+51% complete 54% complete
+
+Creating Pluggable Databases
+
+sas complete
+
+77% complete
+
+Executing Post Configuration Actions
+
+100% complete
+
+database creation complete. For details check the logfiles at:
+
+/u01/app/oracle/cfgtoollogs/dbca/CDB2.
+
+Database Information:
+
+Global Database Rane (DB2
+
+System Identifier(SID).CDR2
+
+Look at the Log File "/u01/app/oracle/cfgtoollogs/obca/CD82/cb6z.log for further details".
+
+
+
+
 
 
 
