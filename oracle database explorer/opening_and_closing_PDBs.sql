@@ -16,3 +16,12 @@ SQL> ALTER PLAUGGABLE DATABASE ALL OPEN;
 SQL>ALTER PLUGGABLE DATABASE PDB1 CLOSE;
 -- TO CLOSE ALL OPENED PDBS WE USE:
 SQL> ALTER PLAUGGABLE DATABASE ALL CLOSE;
+
+--After restarting a CDB instance, all PDBs except PDB$SEED are by default kept in mounted mode.
+
+--PDB$SEED is opened in READ-ONLY.
+
+-- if you want pdb to  automatically open whenever CDB restarts, use the SAVE STATE clause of the ALTER PLAUGGABLE DATABASE command.
+
+SQL> ALTER PLUGGABLE DATABASE pdb1 SAVE STATE;
+
