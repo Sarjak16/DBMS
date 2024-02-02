@@ -160,21 +160,12 @@ SQL> startup
 
 SQL> show pdbs
 
-CON ID CON NAME
+-- CON ID     CON NAME     OPEN MODE        RESTRICTED
+-- ....... .............   .............    .........
+-- 2           PDBSSEED        READ ONLY        NO
+-- 3           ORCLPDB1        READ WRITE       NO
+-- 4           ORCLPDB2        READ WRITE       NO
 
-OPEN MODE RESTRICTED
+SQL>exit
 
-2 PDBSSEED
-
-READ ONLY NO
-
-3 ORCLPDB1
-
-READ WRITE NO
-
-SQL>
-
-READ WRITE NO
-
-4 ORCLPDB2
 
