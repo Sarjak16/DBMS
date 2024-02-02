@@ -16,21 +16,10 @@ SQL> startup nomount
 
 ORACLE instance started.
 
-Total System Global Area
-
-
-
-Fixed Size
-
-Variable Size
-
-Database Buffers
-
-9136480 bytes
-
-620756992 bytes
-
-1375731712 bytes
+Total System Global Area    2013264224 bytes
+Fixed Size  9136480 bytes
+Variable Size   620756992 bytes
+Database Buffers    1375731712 bytes
 
 SQL> alter database mount;
 
