@@ -44,14 +44,78 @@ SQL> show pdbs
 
 SQL> @state
 
-SQL> col con name for a30
+SQL> col con_name for a30
 
-SQL> select con name, state from dba pdb saved states
+SQL> select con_name, state from dba_pdb_saved_states
 
 -- 2 /
 
 -- no rows selected
 
-SQL> alter pluggable database orclpdbi open;
+SQL> alter pluggable database orclpdb1 open;
 
 -- Pluggable database altered.
+
+SQL> alter pluggable database all save state;
+
+--Pluggable database altered.
+
+SQL> @state
+
+SQL> set echo on
+
+SQL> col con name for a30
+
+SQL> select con name, state from dba pdb saved states
+
+2/
+
+--CON NAME                                      STATE
+--............................................ .......
+--ORCLPDB1                                      OPEN
+
+SQL> shutdown immediate
+
+-- Database closed.
+
+-- Database dismounted..
+
+-- ORACLE instance shut down.
+
+SQL> startup
+
+-- ORACLE instance started.
+
+-- Total System Global Area    2013264224 bytes
+
+-- Fixed Size  9136480 bytes
+
+-- Variable Size   620756992 bytes
+
+-- Database Buffers   1375731712 bytes  
+
+-- Redo Buffers   7639040 bytes
+
+-- Database mounted.
+
+-- Database opened.
+
+SQL> sho pdbs
+
+-- CON ID  CON NAME    OPEN MODE   RESTRICTED
+-- ....... .........   ..........  ...........
+-- 2       PDBSSEED     READ ONLY  NO
+-- 3       ORCLPDB1     READ WRITE NO
+-- 4       ORCLPDB2     MOUNTED
+
+
+
+SQL> alter pluggable database orclpdb2 open;
+
+--Pluggable database altered.
+
+SQL> alter pluggable database all save state;
+-- Pluggable database altered.
+
+SQL @state
+
