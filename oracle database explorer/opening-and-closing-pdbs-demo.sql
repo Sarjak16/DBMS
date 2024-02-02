@@ -21,18 +21,15 @@ SQL> startup nomount
 -- Fixed Size  9136480 bytes
 -- Variable Size   620756992 bytes
 -- Database Buffers    1375731712 bytes
+-- Redo Buffers     7639040 bytes
 
 SQL> alter database mount;
 
-Redo Buffers
-
-7639040 bytes
-
-Database altered.
+-- Database altered.
 
 SQL> alter database open;
 
-Database altered.
+-- Database altered.
 
 SQL> show pdbs
 
@@ -51,10 +48,10 @@ SQL> col con name for a30
 
 SQL> select con name, state from dba pdb saved states
 
-21
+-- 2 /
 
-no rows selected
+-- no rows selected
 
 SQL> alter pluggable database orclpdbi open;
 
-Pluggable database altered.
+-- Pluggable database altered.
