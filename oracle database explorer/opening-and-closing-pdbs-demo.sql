@@ -119,3 +119,62 @@ SQL> alter pluggable database all save state;
 
 SQL @state
 
+SQL> set echo on
+
+SQL> col con name for a30
+
+SQL> select con_name, state from dba_pdb_saved_states
+
+-- 2   /
+
+-- CON NAME    STATE
+-- .........   .........
+
+-- ORCLPDB1    OPEN
+
+-- ORCLPDB2    OPEN
+
+SQL> shutdown immediate
+
+
+-- Database closed. 
+--Database dismounted.
+-- ORACLE instance shut down.
+
+SQL> startup
+
+-- ORACLE instance started.
+
+-- Total System Global Area    2013264224 bytes
+
+-- Fixed Size      9136480 bytes
+
+-- Variable Size   620756992 bytes
+
+-- Database Buffers    1375731712 bytes
+
+-- Redo Buffers    7639040 bytes
+
+-- Database mounted.
+--Database opened.
+
+SQL> show pdbs
+
+CON ID CON NAME
+
+OPEN MODE RESTRICTED
+
+2 PDBSSEED
+
+READ ONLY NO
+
+3 ORCLPDB1
+
+READ WRITE NO
+
+SQL>
+
+READ WRITE NO
+
+4 ORCLPDB2
+
