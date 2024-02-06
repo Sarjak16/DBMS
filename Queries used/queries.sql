@@ -352,3 +352,12 @@ FROM WORKORDER;
 -- OUTER JOINS (left, right, or full) includes rows from one or both tables even if they don't have matching values
 
 -- CROSS JOINS return all rows from the left table with all rows from the right table. WHERE conditions should always be included.
+
+
+-------------------------------AGGREGATE SAMPLE-----------------------------------------------------------------------------------------------------------
+-- SQL server provides aggregate functions to assist with the summarization of large volumes of the data.
+SELECT COUNT (DISTINCT salesOrderID) AS UniqueOrders,
+AVG(unit price) As Avg_unitprice,
+MIN(OrderQty) AS min_orderqty,
+MAX(LineTotal) AS max_Linetotal
+From Sales.salesorderdetail;
