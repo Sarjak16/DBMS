@@ -321,7 +321,8 @@ WHERE FullName NOT LIKE '%cer Pau%' AND FullName NOT LIKE '%"Ted"%';
 +-----------+----------------------+-----------+---------------------+
 7 rows in set (0.00 sec)
 
-
+.....................................................................................................................................
+--Module 1:
 -------------------------UNION-----------------------------------------------
 SELECT * FROM HR WHERE JOB="DESIGN"
 UNION 
@@ -361,3 +362,19 @@ AVG(unit price) As Avg_unitprice,
 MIN(OrderQty) AS min_orderqty,
 MAX(LineTotal) AS max_Linetotal
 From Sales.salesorderdetail;
+
+-- The key points from this module 1 are:
+-- SELECT Statement
+-- DML stands for Data Manipulation Language.
+-- The SELECT statement is use to retrieve data from one or more tables stored in a database.
+
+-- Optionally, the SELECT statement can include the WHERE clause to define the conditions used to determine what rows will be returned.
+
+-- ORDER BY - Sorts the results, by which field you have specified, it sorts ascending order by default the statement DESC sorts it descending order.
+-- UNION - Clause allows you to combine the rows returned from multiple SELECT statements into a single result set.
+-- EXCEPT - Clause returns distinct values form the left query that are not found on the right query.
+-- INTERSECT - Clause returns any distinct values returned by both the query on the left and right sides of the intersect operand.
+-- JOINS - The JOIN clause allows you to combine related data from multiple tables as one result set.
+-- Predicates are an expression that evaluates to TRUE, FALSE, or UNKNOWN.
+
+-- Predicates are used in the search condition of WHERE clauses and HAVING clauses, the join conditions of FROM clauses, and other constructs where a Boolean value is required.
