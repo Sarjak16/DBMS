@@ -378,3 +378,15 @@ From Sales.salesorderdetail;
 -- Predicates are an expression that evaluates to TRUE, FALSE, or UNKNOWN.
 
 -- Predicates are used in the search condition of WHERE clauses and HAVING clauses, the join conditions of FROM clauses, and other constructs where a Boolean value is required.
+
+-- INSERT, UPDATE and DELETE
+-- INSERT statement is used to insert data into a table, BULK INSERT can be used to import a data file into a table.
+
+-- UPDATE statement is used to modify the data that is already stored in a table.
+
+-- DELETE statement is used to delete rows from a table, however without the WHERE clause the statement will cause all rows to be deleted.
+
+-- Indexes allow you to speed up the retrieval of data stored within a table or view.
+
+-- Triggers are used to enforce business rules when data is modified.
+
