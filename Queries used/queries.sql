@@ -342,3 +342,13 @@ FROM PRODUCTS
 INTERSECT
 SELECT PRODUCTID
 FROM WORKORDER;
+
+-- JOIN clause
+
+-- The JOIN clause allows you to combine related data from multiple tables into one result set
+
+-- INNER JOINS uses a comparison operator to match rows from two tables based on values in a common column that exists in both tables
+
+-- OUTER JOINS (left, right, or full) includes rows from one or both tables even if they don't have matching values
+
+-- CROSS JOINS return all rows from the left table with all rows from the right table. WHERE conditions should always be included.
