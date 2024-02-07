@@ -390,3 +390,34 @@ From Sales.salesorderdetail;
 
 -- Triggers are used to enforce business rules when data is modified.
 
+-- How To Write A SQL JOIN
+-- There are three key parts to get right when writing a JOIN in SQL. First, you need to specify what columns to show. For our artists x songs example, we'll just use SELECT * for that.
+
+-- Secondly, you need to specify what are the names of the two tables we are joining. Since we are joining the artists with songs table, our query so far is as follows:
+
+-- SELECT 
+--   *
+-- FROM artists
+-- JOIN songs
+-- --The third and final in a SQL JOIN query is the ON clause, which explains to the RDBMS how the two tables relate to each other.
+
+-- --We need to explicitly write in the SQL query that the artists_id column in the artists table matches up against the artist_id column in the songs table with this clause:
+
+-- ON artists.artist_id = songs.artist_id;
+
+-- Putting these 3 parts together, we get the following SQL JOIN query:
+
+SELECT 
+  *
+FROM artists
+JOIN songs
+  ON artists.artist_id = songs.artist_id;
+-- The above query combines info from the artists AND songs table into the result below:
+
+artist_id	artist_name	    label_owner	            song_id	artist_id	name
+101	        Ed Sheeran	    Warner Music Group	    55511	101	        Perfect
+101     	Ed Sheeran	    Warner Music Group	    45202	101	        Shape of You
+120     	Drake	        Warner Music Group	    22222	120	        One Dance
+120	        Drake	        Warner Music Group	    19960	120	        Hotline Bling
+125	        Bad Bunny	    Rimas Entertainment	    12636	125	        Mia
+
