@@ -439,7 +439,7 @@ WHERE goodreads.price >= 20;
 
 
 
--- LEFT JOIN
+------------------------------------------------------------ LEFT JOIN
 -- Next, let's explore how the LEFT JOIN works using our orders and deliveries tables.
 
 -- Suppose we want to retrieve all the orders along with their corresponding deliveries information. Here's the query:
