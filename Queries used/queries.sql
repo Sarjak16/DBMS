@@ -425,3 +425,17 @@ artist_id	artist_name	    label_owner	            song_id	artist_id	name
 125	        Bad Bunny	    Rimas Entertainment	    12636	125	        Mia
 */
 
+-- -------------------------------------------------------------Inner join
+SELECT 
+  orders.order_id, 
+  orders.customer_id, 
+  goodreads.book_title, 
+  orders.quantity
+FROM goodreads
+INNER JOIN orders
+  ON goodreads.book_id = orders.book_id -- Columns with same data type (integer)
+WHERE goodreads.price >= 20;
+--The INNER JOIN returns only the rows where there is a matching book ID in both the goodreads and orders tables, focusing on books with prices $20 and above.
+
+
+
