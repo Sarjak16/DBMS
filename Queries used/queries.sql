@@ -439,3 +439,18 @@ WHERE goodreads.price >= 20;
 
 
 
+-- LEFT JOIN
+-- Next, let's explore how the LEFT JOIN works using our orders and deliveries tables.
+
+-- Suppose we want to retrieve all the orders along with their corresponding deliveries information. Here's the query:
+
+SELECT 
+  orders.order_id, 
+  deliveries.delivery_id, 
+  deliveries.delivery_date, 
+  deliveries.delivery_status
+FROM orders
+LEFT JOIN deliveries
+  ON orders.order_id = deliveries.order_id;
+--With LEFT JOIN, all rows from the left table (orders) are fetched, along with matching rows from the right table (deliveries).
+-- If there is no matching data in the right table, the result will still include the left table's data, with NULL values in the columns from the right table.
