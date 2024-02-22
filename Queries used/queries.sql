@@ -425,7 +425,7 @@ artist_id	artist_name	    label_owner	            song_id	artist_id	name
 125	        Bad Bunny	    Rimas Entertainment	    12636	125	        Mia
 */
 
--- -------------------------------------------------------------Inner join
+-- -------------------------------------------------------------Inner join-------------------------------------
 SELECT 
   orders.order_id, 
   orders.customer_id, 
@@ -439,7 +439,7 @@ WHERE goodreads.price >= 20;
 
 
 
------------------------------------------------------------- LEFT JOIN
+------------------------------------------------------------ LEFT JOIN--------------------------------------------------------
 -- Next, let's explore how the LEFT JOIN works using our orders and deliveries tables.
 
 -- Suppose we want to retrieve all the orders along with their corresponding deliveries information. Here's the query:
