@@ -15,7 +15,6 @@ into demo_employee (Ename, address, age) values( 'sita', 'ltp', 24)
 into demo_worker(Ename, designation, salary) values( 'ram', 'manager', 25000)
 into demo_worker(Ename, designation, salary) values( 'hari', 'staff', 12000)
 into demo_worker(Ename, designation, salary) values( 'shyam', 'director', 35000)
-
 select * from dual;
 
 /*Natural join*/
