@@ -6,4 +6,10 @@ For example:
 
    CREATE USER brian IDENTIFIED BY brianpass;
 
-   
+--    Granting privileges
+-- The syntax for granting privileges is:
+
+   GRANT privilege TO user;
+-- For example:
+
+   GRANT dba TO brian;
