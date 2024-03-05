@@ -21,3 +21,8 @@ For example:
 -- For example:
 
    ALTER USER brian IDENTIFIED BY brianpassword;
+
+-- Importing and exporting
+-- There are two methods of backing up and restoring database tables and data. The 'exp' and 'imp' tools are simpler tools geared towards smaller databases.
+--  If database structures become more complex or are very large ( > 50 GB for example) then using the RMAN tool is more appropriate.
+
