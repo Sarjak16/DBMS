@@ -13,3 +13,11 @@ For example:
 -- For example:
 
    GRANT dba TO brian;
+
+   -- Change password
+-- The syntax for changing user password is:
+
+   ALTER USER username IDENTIFIED BY password;
+For example:
+
+   ALTER USER brian IDENTIFIED BY brianpassword;
