@@ -18,6 +18,6 @@ For example:
 -- The syntax for changing user password is:
 
    ALTER USER username IDENTIFIED BY password;
-For example:
+-- For example:
 
    ALTER USER brian IDENTIFIED BY brianpassword;
