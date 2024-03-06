@@ -41,6 +41,6 @@ For example:
 --To view all the keywords:
 
    imp HELP=yes
-An example:
+--An example:
 
    imp brian/brianpassword FILE=mydump.dmp FULL=yes
