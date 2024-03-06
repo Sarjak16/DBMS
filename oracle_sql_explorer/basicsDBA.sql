@@ -36,7 +36,7 @@ For example:
 
    imp KEYWORD=value
 
-   There are number of parameters you can use for keywords.
+   -- There are number of parameters you can use for keywords.
 
 To view all the keywords:
 
