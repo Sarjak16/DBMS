@@ -38,7 +38,7 @@ For example:
 
    -- There are number of parameters you can use for keywords.
 
-To view all the keywords:
+--To view all the keywords:
 
    imp HELP=yes
 An example:
