@@ -46,19 +46,19 @@ For example:
    imp brian/brianpassword FILE=mydump.dmp FULL=yes
 
 
-   PL/SQL
-Operators
-Arithmetic operators
-Addition: +
-Subtraction: -
-Multiplication: *
-Division: /
-Power (PL/SQL only): **
-Examples
-gives all employees from customer id 5 a 5% raise
+--    PL/SQL
+-- Operators
+-- Arithmetic operators
+-- Addition: +
+-- Subtraction: -
+-- Multiplication: *
+-- Division: /
+-- Power (PL/SQL only): **
+-- Examples
+-- gives all employees from customer id 5 a 5% raise
 
 UPDATE employee SET salary = salary * 1.05
                   WHERE customer_id = 5;
-determines the after tax wage for all employees
+-- determines the after tax wage for all employees
 
 SELECT wage – tax FROM employee;
