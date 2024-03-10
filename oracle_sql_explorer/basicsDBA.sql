@@ -63,13 +63,13 @@ UPDATE employee SET salary = salary * 1.05
 
 SELECT wage – tax FROM employee;
 
-Comparison operators
-Greater Than: >
-Greater Than or Equal To: >=
-Less Than: <
-Less Than or Equal to: <=
-Equivalence: =
-Inequality: != ^= <> ¬= (depends on platform)
-Examples
+-- Comparison operators
+-- Greater Than: >
+-- Greater Than or Equal To: >=
+-- Less Than: <
+-- Less Than or Equal to: <=
+-- Equivalence: =
+-- Inequality: != ^= <> ¬= (depends on platform)
+-- Examples
 SELECT name, salary, email FROM employees WHERE salary > 40000;
 SELECT name FROM customers WHERE customer_id < 6;
