@@ -34,3 +34,21 @@ print(conn)
 # Disconnecting from the server
 conn.close()
 
+
+
+# Creating the database
+
+# importing required libraries
+import mysql.connector
+ 
+dataBase = mysql.connector.connect(
+host ="localhost",
+user ="user",
+passwd ="user"
+)
+ 
+# preparing a cursor object
+cursorObject = dataBase.cursor()
+ 
+# creating database
+cursorObject.execute("CREATE DATABASE Employee_details")
