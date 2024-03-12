@@ -1,3 +1,7 @@
+
+# This part is all about making databases in mysql using python programming language.
+
+
 # Importing module 
 import mysql.connector
  
