@@ -52,3 +52,17 @@ cursorObject = dataBase.cursor()
  
 # creating database
 cursorObject.execute("CREATE DATABASE Employee_details")
+
+#create table
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  password="yourpassword",
+  database="mydatabase"
+)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))")
