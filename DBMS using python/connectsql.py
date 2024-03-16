@@ -67,6 +67,7 @@ mycursor = mydb.cursor()
 
 mycursor.execute("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))")
 
+# ..........................................................................................................
 
 # FUNCTION to connect to mysql server( for this we need mysql community server installed in our computer)
 
