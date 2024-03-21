@@ -84,3 +84,13 @@ def create_server_connection(host_name, user_name, user_password):
         print(f"Error: '{err}'")
 
     return connection
+
+# creating a query execution function 
+def execute_query(connection, query):
+    cursor = connection.cursor()
+    try:
+        cursor.execute(query)
+        connection.commit()
+        print("Query successful")
+    except Error as err:
+        print(f"Error: '{err}'")
