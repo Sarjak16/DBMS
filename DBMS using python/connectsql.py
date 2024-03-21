@@ -85,7 +85,7 @@ def create_server_connection(host_name, user_name, user_password):
 
     return connection
 
-# creating a query execution function 
+# creating a query execution function  
 def execute_query(connection, query):
     cursor = connection.cursor()
     try:
