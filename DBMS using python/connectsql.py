@@ -94,3 +94,19 @@ def execute_query(connection, query):
         print("Query successful")
     except Error as err:
         print(f"Error: '{err}'")
+        
+#creating table
+
+
+create_teacher_table = """
+CREATE TABLE teacher (
+  teacher_id INT PRIMARY KEY,
+  first_name VARCHAR(40) NOT NULL,
+  last_name VARCHAR(40) NOT NULL,
+  language_1 VARCHAR(3) NOT NULL,
+  language_2 VARCHAR(3),
+  dob DATE,
+  tax_id INT UNIQUE,
+  phone_no VARCHAR(20)
+  );
+ """
