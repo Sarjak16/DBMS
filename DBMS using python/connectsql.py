@@ -97,7 +97,6 @@ def execute_query(connection, query):
         
 #creating table
 
-
 create_teacher_table = """
 CREATE TABLE teacher (
   teacher_id INT PRIMARY KEY,
